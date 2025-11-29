@@ -3,13 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://gohan37.github.io/portafolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "vite build",
-"deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "lucide-react": "^0.553.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -22,11 +29,5 @@
     "gh-pages": "^6.3.0",
     "globals": "^16.5.0",
     "vite": "^7.2.2"
-  },
-  "dependencies": {
-    "lucide-react": "^0.553.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.0"
   }
 }
