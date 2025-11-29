@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="footer-section">
             <h3>Trabajo</h3>
             <ul>
-              <li><Link to="/projects">Proyectos</Link></li>
+              
               <li><Link to="/contact">Contacto</Link></li>
             </ul>
           </div>
