@@ -1,1 +1,0 @@
-console.log("Deva Portafolio inicializado");

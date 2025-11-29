@@ -1,0 +1,168 @@
+.hero {
+  height: 90vh; /* ocupa 90% de la pantalla */
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  justify-content: flex-start;
+  padding: 0 40px;
+  background: #0b1118; /* tu azul profundo */
+}
+
+.hero-content {
+  max-width: 800px;
+  margin-top: -40px; /* ajusta para mejor equilibrio visual */
+}
+
+/* Título principal */
+.hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 45px;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255,255,255,0.05);
+}
+
+/* Subtítulo */
+.hero h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #c9d5e1;
+  margin-bottom: 45px;
+  line-height: 1.45;
+}
+
+/* Descripción */
+.hero p {
+  font-size: 18px;
+  color: #a7b4c5;
+  max-width: 650px;
+  margin-bottom: 45px;
+  line-height: 1.6;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn-primary {
+  background: #1e8bff;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 0 12px rgba(30,139,255,0.15);
+}
+
+.btn-primary:hover {
+  background: #3a9dff;
+  box-shadow: 0 0 18px rgba(30,139,255,0.6);
+  transform: translateY(-2px);
+}
+.hero-buttons {
+    display: flex;
+  justify-content: center; /* centra horizontalmente */
+  gap: 20px;               /* separa los botones entre sí */
+  margin-top: 20px;        /* espacio respecto al texto */
+  flex-wrap: wrap;
+}
+
+/* BOTÓN SECUNDARIO */
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #1e8bff;
+  color: #1e8bff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 0 0 rgba(30,139,255,0); /* suaviza el inicio */
+}
+
+.btn-secondary:hover {
+  background: #1e8bff;
+  color: white;
+  box-shadow: 0 0 18px rgba(30,139,255,0.6);
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 100px 20px 60px 20px;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-top: 0;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 🔥 CONTENEDOR CON IMAGEN IZQUIERDA Y TEXTO DERECHA */
+.hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 0 40px;
+  height: 90vh;
+}
+
+/* ✅ Imagen del lado izquierdo */
+.hero-image img {
+  width: 250px;
+  height: 200;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: 0.4s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+}
+
+/* ✅ Ajustes del texto */
+.hero-content {
+  flex: 1;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-layout {
+    flex-direction: column; /* imagen arriba y texto abajo */
+    text-align: center;
+    height: auto;
+    padding-top: 120px;
+  }
+
+  .hero-image img {
+    width: 260px;
+  }
+
+  .hero-content {
+    margin-top: 20px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
